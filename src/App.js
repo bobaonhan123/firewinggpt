@@ -1,10 +1,11 @@
 
+import Header from "./Header";
+import MainChat from "./MainChat";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        react app
-      </header>
+      <Header />
+      <MainChat />
     </div>
   );
 }
