@@ -188,7 +188,7 @@ export default function Example() {
           <div className="flex flex-shrink-0 items-center px-6">
             <img
               className="h-8 w-auto"
-              src="https://tailwindui.com/img/logos/mark.svg?color=purple&shade=500"
+              src="./logo.png"
               alt="Your Company"
             />
           </div>
