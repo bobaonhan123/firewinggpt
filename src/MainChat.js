@@ -458,7 +458,8 @@ export default function Example() {
           </div>
           <main className="flex-1 h-screen fixed w-full lg:w-9/12 top-16 lg:top-0">
             {/* Page title & actions */}
-            <ChatPanel />
+            {navigation[0].current && (<ChatPanel />)}
+            {navigation[1].current && (<TasksTable />)}
           </main>
         </div>
       </div>
