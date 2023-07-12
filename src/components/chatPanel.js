@@ -32,7 +32,7 @@ export default function ChatPanel() {
                     ></Message>)}
 
                 </MessageList>
-                <MessageInput placeholder="Type message here" onChange={ } onSend={(value) => handleSubmit(value)} />
+                <MessageInput className="fixed bottom-16 md:bottom-0" placeholder="Type message here" onChange={(value) => setPrompt(value)} onSend={(value) => handleSubmit(value)} />
             </ChatContainer>
         </MainContainer>
     </div>)
