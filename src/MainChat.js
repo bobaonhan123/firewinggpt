@@ -17,6 +17,7 @@
 import { Fragment, useState } from 'react'
 import { Dialog, Menu, Transition } from '@headlessui/react'
 import { Bars3CenterLeftIcon, Bars4Icon, ClockIcon, HomeIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import TasksTable from './components/tasksTable'
 import {
   ChevronRightIcon,
   ChevronUpDownIcon,
@@ -471,7 +472,7 @@ export default function Example() {
           </div>
           <main className="flex-1 h-screen fixed w-full top-16 lg:top-0">
             {/* Page title & actions */}
-                <h1>Hello world</h1>
+                <TasksTable />
            </main>
         </div>
       </div>
