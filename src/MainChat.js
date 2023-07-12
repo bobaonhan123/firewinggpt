@@ -1,23 +1,9 @@
-/*
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
+
 import { Fragment, useState } from 'react'
 import { Dialog, Menu, Transition } from '@headlessui/react'
 import { Bars3CenterLeftIcon, Bars4Icon, ClockIcon, HomeIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import TasksTable from './components/tasksTable'
+import ChatPanel from './components/chatPanel'
 import {
   ChevronRightIcon,
   ChevronUpDownIcon,
@@ -470,9 +456,9 @@ export default function Example() {
               </div>
             </div>
           </div>
-          <main className="flex-1 h-screen fixed w-full top-16 lg:top-0">
+          <main className="flex-1 h-screen fixed w-9/12 top-16 lg:top-0">
             {/* Page title & actions */}
-                <TasksTable />
+                <ChatPanel />
            </main>
         </div>
       </div>
