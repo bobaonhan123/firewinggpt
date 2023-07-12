@@ -20,9 +20,9 @@ export default function ChatPanel() {
         setMessages([...messages, value]);
         setPrompt("");
     }
-    return (<div className="lg:w-full lg:h-full">
-        <MainContainer>
-            <ChatContainer>
+    return (<div className="lg:w-full h-full">
+        <MainContainer className="h-full">
+            <ChatContainer className="">
                 <MessageList>
                     <Message
                         model={{
@@ -32,7 +32,7 @@ export default function ChatPanel() {
                         }}
                     />
                 </MessageList>
-                <MessageInput placeholder="Type message here" onSend={(value) => handleSubmit(value)} />
+                <MessageInput placeholder="Type message here" onSend={(value) => handleSubmit(value)} className="fixed bottom-16"/>
             </ChatContainer>
         </MainContainer>
     </div>)
