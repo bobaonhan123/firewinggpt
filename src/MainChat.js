@@ -27,7 +27,7 @@ function classNames(...classes) {
 
 export default function Example() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
-
+  const [newSection, setNewSection] = useState(false)
   return (
     <>
       {/*
@@ -99,6 +99,11 @@ export default function Example() {
                           <a
                             key={item.name}
                             href={item.href}
+                            onClick={() => {
+                              navigation.forEach((item) => item.current = false)
+                              item.current = true
+                              setNewSection(!newSection)
+                            }}
                             className={classNames(
                               item.current
                                 ? 'bg-gray-100 text-gray-900'
@@ -289,6 +294,13 @@ export default function Example() {
                   <a
                     key={item.name}
                     href={item.href}
+                    onClick={() => {
+                      navigation.forEach((e) => {
+                        e.current = false
+                      })
+                      item.current = true
+                      setNewSection(!newSection)
+                    }}
                     className={classNames(
                       item.current ? 'bg-gray-200 text-gray-900' : 'text-gray-700 hover:text-gray-900 hover:bg-gray-50',
                       'group flex items-center px-2 py-2 text-sm font-medium rounded-md'
