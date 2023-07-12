@@ -101,7 +101,7 @@ export default function Example() {
                   <div className="flex flex-shrink-0 items-center px-4">
                     <img
                       className="h-8 w-auto"
-                      src="https://tailwindui.com/img/logos/mark.svg?color=purple&shade=500"
+                      src="./logo.png"
                       alt="Your Company"
                     />
                   </div>
@@ -148,7 +148,7 @@ export default function Example() {
           <div className="flex flex-shrink-0 items-center px-6">
             <img
               className="h-8 w-auto"
-              src="https://static.hudl.com/users/prod/5499830_8e273ea3a64448478f1bb0af5152a4c7.jpg"
+              src="./logo.png"
               alt="Your Company"
             />
           </div>
@@ -469,9 +469,9 @@ export default function Example() {
               </div>
             </div>
           </div>
-          <main className="flex-1">
+          <main className="flex-1 h-screen fixed w-full top-16 lg:top-0">
             {/* Page title & actions */}
-                      
+                <h1>Hello world</h1>
            </main>
         </div>
       </div>
