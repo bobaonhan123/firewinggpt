@@ -15,24 +15,24 @@ export default function ChatPanel() {
     useEffect(() => {
         console.log("messages", messages);
     }, [messages]);
-    function handleSubmit(value) {
-
-        setMessages([...messages, value]);
+    function handleSubmit() {
+        setMessages([...messages, prompt]);
         setPrompt("");
     }
     return (<div className="lg:w-full h-full">
-        <MainContainer className="h-full">
-            <ChatContainer className="">
+        <MainContainer >
+            <ChatContainer className="h-full">
                 <MessageList>
-                    <Message
+                    {messages.map((message) => <Message
                         model={{
-                            message: "Hello my friend",
+                            message: message,
                             sentTime: "just now",
-                            sender: "Joe",
+                            direction: "outgoing",
                         }}
-                    />
+                    ></Message>)}
+
                 </MessageList>
-                <MessageInput placeholder="Type message here" onSend={(value) => handleSubmit(value)} className="fixed bottom-16"/>
+                <MessageInput placeholder="Type message here" onChange={ } onSend={(value) => handleSubmit(value)} />
             </ChatContainer>
         </MainContainer>
     </div>)
