@@ -92,6 +92,7 @@ export default function Example() {
         <body class="h-full">
         ```
       */}
+      {/* Off-canvas menu for mobile, show/hide based on off-canvas menu state. */}
       <div className="min-h-full">
         <Transition.Root show={sidebarOpen} as={Fragment}>
           <Dialog as="div" className="relative z-40 lg:hidden" onClose={setSidebarOpen}>
@@ -183,7 +184,7 @@ export default function Example() {
           </Dialog>
         </Transition.Root>
 
-        {/* Static sidebar for desktop */}
+        {/* Static sidebar for desktop/pc */}
         <div className="hidden lg:fixed lg:inset-y-0 lg:flex lg:w-64 lg:flex-col lg:border-r lg:border-gray-200 lg:bg-gray-100 lg:pt-5 lg:pb-4">
           <div className="flex flex-shrink-0 items-center px-6">
             <img
