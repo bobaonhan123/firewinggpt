@@ -148,7 +148,7 @@ export default function Example() {
           <div className="flex flex-shrink-0 items-center px-6">
             <img
               className="h-8 w-auto"
-              src="./logo.png"
+              src="https://static.hudl.com/users/prod/5499830_8e273ea3a64448478f1bb0af5152a4c7.jpg"
               alt="Your Company"
             />
           </div>
@@ -162,12 +162,12 @@ export default function Example() {
                     <span className="flex min-w-0 items-center justify-between space-x-3">
                       <img
                         className="h-10 w-10 flex-shrink-0 rounded-full bg-gray-300"
-                        src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80"
+                        src="https://static.hudl.com/users/prod/5499830_8e273ea3a64448478f1bb0af5152a4c7.jpg"
                         alt=""
                       />
                       <span className="flex min-w-0 flex-1 flex-col">
-                        <span className="truncate text-sm font-medium text-gray-900">Jessy Schwarz</span>
-                        <span className="truncate text-sm text-gray-500">@jessyschwarz</span>
+                        <span className="truncate text-sm font-medium text-gray-900">HsbNhan</span>
+                        <span className="truncate text-sm text-gray-500">@GettingOverIt</span>
                       </span>
                     </span>
                     <ChevronUpDownIcon
@@ -324,6 +324,7 @@ export default function Example() {
           </div>
         </div>
         {/* Main column */}
+        {/* Mobile header */}
         <div className="flex flex-col lg:pl-64">
           {/* Search header */}
           <div className="sticky top-0 z-10 flex h-16 flex-shrink-0 border-b border-gray-200 bg-white lg:hidden">
@@ -363,7 +364,7 @@ export default function Example() {
                       <span className="sr-only">Open user menu</span>
                       <img
                         className="h-8 w-8 rounded-full"
-                        src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        src="https://static.hudl.com/users/prod/5499830_8e273ea3a64448478f1bb0af5152a4c7.jpg"
                         alt=""
                       />
                     </Menu.Button>
