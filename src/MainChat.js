@@ -456,7 +456,7 @@ export default function Example() {
               </div>
             </div>
           </div>
-          <main className="flex-1 h-screen fixed w-9/12 top-16 lg:top-0">
+          <main className="flex-1 h-screen fixed w-full lg:w-9/12 top-16 lg:top-0">
             {/* Page title & actions */}
                 <ChatPanel />
            </main>
