@@ -118,7 +118,7 @@ export default function Example() {
                           </a>
                         ))}
                       </div>
-                      
+
                     </nav>
                   </div>
                 </Dialog.Panel>
@@ -306,7 +306,7 @@ export default function Example() {
                   </a>
                 ))}
               </div>
-              
+
             </nav>
           </div>
         </div>
@@ -458,8 +458,8 @@ export default function Example() {
           </div>
           <main className="flex-1 h-screen fixed w-full lg:w-9/12 top-16 lg:top-0">
             {/* Page title & actions */}
-                <ChatPanel />
-           </main>
+            <ChatPanel />
+          </main>
         </div>
       </div>
     </>
