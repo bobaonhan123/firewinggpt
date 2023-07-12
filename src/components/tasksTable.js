@@ -14,8 +14,8 @@ const people = [
 
 export default function Example() {
     return (
-        <div className="w-96">
-        <div className="px-4 w-full lg:px-8">
+        <div className="w-9/12 ">
+        <div className="mt-8 px-4 w-full lg:px-8">
             <div className="sm:flex sm:items-center">
                 <div className="sm:flex-auto">
                     <h1 className="text-xl font-semibold text-gray-900">Users</h1>
